@@ -1,0 +1,201 @@
+{
+  "ver": "1.0.8",
+  "importer": "sprite-atlas",
+  "imported": true,
+  "uuid": "20d68b94-1d51-4dbc-940d-d6504b90a3c4",
+  "files": [
+    ".json"
+  ],
+  "subMetas": {
+    "7ab68": {
+      "importer": "sprite-frame",
+      "uuid": "20d68b94-1d51-4dbc-940d-d6504b90a3c4@7ab68",
+      "displayName": "",
+      "id": "7ab68",
+      "name": "knight_stand_1",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 0,
+        "trimY": 0,
+        "width": 30,
+        "height": 30,
+        "rawWidth": 30,
+        "rawHeight": 30,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [],
+          "indexes": [],
+          "uv": [],
+          "nuv": [],
+          "minPos": [],
+          "maxPos": []
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "352fe0a6-c66a-45b0-8f79-a59069873524@6c48a",
+        "atlasUuid": "20d68b94-1d51-4dbc-940d-d6504b90a3c4"
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d3708": {
+      "importer": "sprite-frame",
+      "uuid": "20d68b94-1d51-4dbc-940d-d6504b90a3c4@d3708",
+      "displayName": "",
+      "id": "d3708",
+      "name": "knight_stand_2",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 30,
+        "trimY": 0,
+        "width": 30,
+        "height": 30,
+        "rawWidth": 30,
+        "rawHeight": 30,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [],
+          "indexes": [],
+          "uv": [],
+          "nuv": [],
+          "minPos": [],
+          "maxPos": []
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "352fe0a6-c66a-45b0-8f79-a59069873524@6c48a",
+        "atlasUuid": "20d68b94-1d51-4dbc-940d-d6504b90a3c4"
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9de5b": {
+      "importer": "sprite-frame",
+      "uuid": "20d68b94-1d51-4dbc-940d-d6504b90a3c4@9de5b",
+      "displayName": "",
+      "id": "9de5b",
+      "name": "knight_stand_3",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 60,
+        "trimY": 0,
+        "width": 30,
+        "height": 30,
+        "rawWidth": 30,
+        "rawHeight": 30,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [],
+          "indexes": [],
+          "uv": [],
+          "nuv": [],
+          "minPos": [],
+          "maxPos": []
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "352fe0a6-c66a-45b0-8f79-a59069873524@6c48a",
+        "atlasUuid": "20d68b94-1d51-4dbc-940d-d6504b90a3c4"
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d3461": {
+      "importer": "sprite-frame",
+      "uuid": "20d68b94-1d51-4dbc-940d-d6504b90a3c4@d3461",
+      "displayName": "",
+      "id": "d3461",
+      "name": "knight_stand_4",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 90,
+        "trimY": 0,
+        "width": 30,
+        "height": 30,
+        "rawWidth": 30,
+        "rawHeight": 30,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [],
+          "indexes": [],
+          "uv": [],
+          "nuv": [],
+          "minPos": [],
+          "maxPos": []
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "352fe0a6-c66a-45b0-8f79-a59069873524@6c48a",
+        "atlasUuid": "20d68b94-1d51-4dbc-940d-d6504b90a3c4"
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "atlasTextureName": "knight_stand.png",
+    "format": 3,
+    "uuid": "20d68b94-1d51-4dbc-940d-d6504b90a3c4",
+    "textureUuid": "352fe0a6-c66a-45b0-8f79-a59069873524@6c48a"
+  }
+}
