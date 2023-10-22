@@ -1,11 +1,12 @@
-import {_decorator, Component, EventKeyboard, input, Input, KeyCode, UITransform, view, Animation, Prefab, instantiate} from 'cc';
+import {_decorator, Component, EventKeyboard, input, Input, KeyCode, UITransform, view, Animation, Prefab, instantiate,
+    RigidBody2D, v2 } from 'cc';
 
 const { ccclass, property } = _decorator;
 
 @ccclass('playerControl')
 export class playerControl extends Component {
     @property(Prefab) track: Prefab
-    speed: number = 400
+    speed: number = 1000
     viewSize
     playerSize
     playerScale
@@ -17,6 +18,7 @@ export class playerControl extends Component {
         x: 960,
         y: 540
     }
+    rigidBody2D: RigidBody2D
     pressingKey = {
         [KeyCode.KEY_A]: 0,
         [KeyCode.KEY_D]: 0,
@@ -25,6 +27,7 @@ export class playerControl extends Component {
     }
 
     start() {
+        this.rigidBody2D = this.getComponent(RigidBody2D)
         this.animationComponent = this.node.getComponent(Animation)
         this.animationComponent.crossFade('knight_stand', 0.1)
         this.viewSize = view.getDesignResolutionSize()
@@ -63,7 +66,8 @@ export class playerControl extends Component {
         const direction: number[] = [this.pressingKey[KeyCode.KEY_W]-this.pressingKey[KeyCode.KEY_S], this.pressingKey[KeyCode.KEY_D]-this.pressingKey[KeyCode.KEY_A]]
         const normalizedDirection: number[] = this.normalizeArray(direction)
         const pos = this.node.getPosition()
-        this.node.setPosition(pos.x + deltaTime * this.speed * normalizedDirection[1], pos.y + deltaTime * this.speed * normalizedDirection[0])
+        // this.node.setPosition(pos.x + deltaTime * this.speed * normalizedDirection[1], pos.y + deltaTime * this.speed * normalizedDirection[0])
+        this.rigidBody2D.linearVelocity = v2(deltaTime * this.speed * normalizedDirection[1], deltaTime * this.speed * normalizedDirection[0])
         if(normalizedDirection[1] < 0) this.node.setScale(-this.playerScale.x, this.playerScale.y)
         else if(normalizedDirection[1] > 0) this.node.setScale(this.playerScale.x, this.playerScale.y)
         this.playerWorldPosition = this.node.parent.getComponent(UITransform).convertToWorldSpaceAR(pos)

@@ -6,5 +6,10 @@
       "height": 1080
     }
   },
-  "custom_joint_texture_layouts": []
+  "custom_joint_texture_layouts": [],
+  "physics": {
+    "gravity": {
+      "y": 0
+    }
+  }
 }
