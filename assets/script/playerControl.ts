@@ -6,7 +6,7 @@ const { ccclass, property } = _decorator;
 @ccclass('playerControl')
 export class playerControl extends Component {
     @property(Prefab) track: Prefab
-    speed: number = 1000
+    speed: number = 500
     viewSize
     playerSize
     playerScale

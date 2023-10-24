@@ -8,12 +8,13 @@ export class cameraControl extends Component {
 
     }
 
-    update(deltaTime: number) {
+    lateUpdate(deltaTime: number) {
         const playerPosition = this.player.getPosition()
         const cameraPosition = this.node.getPosition()
         const lerpX = math.lerp(cameraPosition.x, playerPosition.x, 4 * deltaTime)
         const lerpY = math.lerp(cameraPosition.y, playerPosition.y, 4 * deltaTime)
         this.node.setPosition(lerpX, lerpY)
+        // this.node.setPosition(playerPosition.x, playerPosition.y)
     }
 }
 
