@@ -3,17 +3,23 @@ const { ccclass, property } = _decorator;
 
 @ccclass('randomRoom_1')
 export class randomRoom_1 extends Component {
-    @property(Prefab) randomFloor: Prefab
+    @property(Prefab) randomFloors: Prefab
+    @property(Prefab) randomWalls: Prefab
+    width: number = 32
+    height: number = 32
     start() {
-        for(let i = 0; i < 16; i++){
-            for(let j = 0; j < 16; j++){
-                let node = instantiate(this.randomFloor);
-                node.setPosition(i*16,j*16)
-                node.setParent(this.node)
-            }
-        }
+        this.addNode(this.randomFloors, "randomFloors_1", 16 ,16)
+        this.addNode(this.randomWalls, "randomWalls_1", 0 ,0)
     }
 
+    addNode(prefab: Prefab, scriptName: string, x, y){
+        const node = instantiate(prefab);
+        const nodeScript = node.getComponent(scriptName)
+        nodeScript.width = this.width
+        nodeScript.height = this.height
+        node.setPosition(x , y)
+        node.setParent(this.node)
+    }
     update(deltaTime: number) {
         
     }

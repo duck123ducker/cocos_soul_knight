@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, resources, SpriteFrame, Sprite, UITransform } from 'cc';
+import { _decorator, Component, Node, resources, SpriteFrame, Sprite } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('randomFloor')
