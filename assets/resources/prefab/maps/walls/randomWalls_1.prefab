@@ -99,10 +99,6 @@
     "__prefab": {
       "__id__": 5
     },
-    "randomWall": {
-      "__uuid__": "162d1be8-1e40-4337-9ac0-51cf146ac175",
-      "__expectedType__": "cc.Prefab"
-    },
     "_id": ""
   },
   {
@@ -118,6 +114,7 @@
       "__id__": 0
     },
     "fileId": "f3SGirUhVHsJc5hZrGfvC4",
+    "instance": null,
     "targetOverrides": null
   }
 ]

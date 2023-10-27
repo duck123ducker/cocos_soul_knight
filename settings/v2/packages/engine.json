@@ -146,5 +146,8 @@
       "version": ""
     },
     "flags": {}
+  },
+  "macroConfig": {
+    "CLEANUP_IMAGE_CACHE": false
   }
 }
