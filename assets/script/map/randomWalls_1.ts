@@ -1,4 +1,5 @@
-import { _decorator, Component, Node, Sprite, UITransform, resources, SpriteFrame, Layers } from 'cc';
+import { _decorator, Component, Node, Sprite, UITransform, resources, SpriteFrame, Layers, RigidBody2D, ERigidBody2DType,
+    BoxCollider2D, v2, math } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('randomWalls_1')
@@ -13,6 +14,7 @@ export class randomWalls_1 extends Component {
     shadowResult = []
 
     start() {
+        this.addRigid()
         resources.loadDir("maps/wall", SpriteFrame,(_err, spriteFrames) => {
             resources.load('white-bg/spriteFrame',SpriteFrame,(_err, spriteFrame) => {
                 this.shadow = spriteFrame
@@ -72,13 +74,34 @@ export class randomWalls_1 extends Component {
         })
     }
 
+    addRigid(){
+        this.addRigidWall(0,8,(this.width+2)*16,16)
+        this.addRigidWall(0,24+this.height*16,(this.width+2)*16,16)
+        this.addRigidWall(0,24,16,16*this.height)
+        this.addRigidWall(this.width*16+16,24,16,16*this.height)
+    }
+
+    addRigidWall(posx,posy,width,height){
+        const node = new Node()
+        node.layer = Layers.Enum.UI_2D
+        node.setScale(1, 1.01)
+        node.setPosition(posx,posy)
+        node.addComponent(UITransform).setAnchorPoint(0,0)
+        const rigidBody2D = node.addComponent(RigidBody2D)
+        rigidBody2D.type = ERigidBody2DType.Static
+        const boxCollider2D = node.addComponent(BoxCollider2D)
+        boxCollider2D.size = math.size(width,height)
+        boxCollider2D.offset = v2(width/2,height/2)
+        node.setParent(this.node)
+    }
+
     addWallTop(x,y,indexTop){
         const node = new Node()
-        node.addComponent(Sprite)
+        const sprite = node.addComponent(Sprite)
         node.layer = Layers.Enum.UI_2D
         node.setScale(1, 1.01)
         node.getComponent(UITransform).setAnchorPoint(0,0)
-        node.getComponent(Sprite).spriteFrame = this.wallTop[indexTop];
+        sprite.spriteFrame = this.wallTop[indexTop];
         node.setPosition(x,y)
         node.setParent(this.node)
     }

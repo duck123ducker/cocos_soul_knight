@@ -4,7 +4,8 @@ const { ccclass, property } = _decorator;
 @ccclass('gameRootControl')
 export class gameRootControl extends Component {
     start() {
-        PhysicsSystem2D.instance.debugDrawFlags = EPhysics2DDrawFlags.Aabb |
+        PhysicsSystem2D.instance.debugDrawFlags =
+            // EPhysics2DDrawFlags.Aabb |
             EPhysics2DDrawFlags.Pair |
             EPhysics2DDrawFlags.Joint |
             EPhysics2DDrawFlags.Shape;

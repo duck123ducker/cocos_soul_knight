@@ -10,6 +10,7 @@ export class randomRoom_1 extends Component {
     start() {
         this.addNode(this.randomFloors, "randomFloors_1", 16 ,16)
         this.addNode(this.randomWalls, "randomWalls_1", 0 ,0)
+        this.node.setPosition(-16*(this.width+2)/2,-16*(this.height+2.5)/2)
     }
 
     addNode(prefab: Prefab, scriptName: string, x, y){
