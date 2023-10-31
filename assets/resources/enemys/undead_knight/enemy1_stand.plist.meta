@@ -1,0 +1,109 @@
+{
+  "ver": "1.0.8",
+  "importer": "sprite-atlas",
+  "imported": true,
+  "uuid": "0e685118-3441-49e9-9398-01cf7cc2044d",
+  "files": [
+    ".json"
+  ],
+  "subMetas": {
+    "1bc24": {
+      "importer": "sprite-frame",
+      "uuid": "0e685118-3441-49e9-9398-01cf7cc2044d@1bc24",
+      "displayName": "",
+      "id": "1bc24",
+      "name": "enemy1_stand_1",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 0,
+        "trimY": 0,
+        "width": 25,
+        "height": 30,
+        "rawWidth": 25,
+        "rawHeight": 30,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [],
+          "indexes": [],
+          "uv": [],
+          "nuv": [],
+          "minPos": [],
+          "maxPos": []
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "50e58044-945e-4aab-a6d4-c458572b2cd8@6c48a",
+        "atlasUuid": "0e685118-3441-49e9-9398-01cf7cc2044d"
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "379e6": {
+      "importer": "sprite-frame",
+      "uuid": "0e685118-3441-49e9-9398-01cf7cc2044d@379e6",
+      "displayName": "",
+      "id": "379e6",
+      "name": "enemy1_stand_2",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 25,
+        "trimY": 0,
+        "width": 25,
+        "height": 30,
+        "rawWidth": 25,
+        "rawHeight": 30,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [],
+          "indexes": [],
+          "uv": [],
+          "nuv": [],
+          "minPos": [],
+          "maxPos": []
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "50e58044-945e-4aab-a6d4-c458572b2cd8@6c48a",
+        "atlasUuid": "0e685118-3441-49e9-9398-01cf7cc2044d"
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "atlasTextureName": "enemy1_stand.png",
+    "format": 3,
+    "uuid": "0e685118-3441-49e9-9398-01cf7cc2044d",
+    "textureUuid": "50e58044-945e-4aab-a6d4-c458572b2cd8@6c48a"
+  }
+}
